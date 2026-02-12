@@ -54,25 +54,34 @@ export default function Hero() {
 
       {/* Buttons */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1 }}
-        className="mt-10 flex gap-6"
-      >
-        <a
-          href="#projects"
-          className="px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 text-black font-semibold hover:scale-105 transition-transform"
-        >
-          View Work
-        </a>
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 1 }}
+  className="mt-10 flex gap-6 flex-wrap justify-center"
+>
+  <a
+    href="#projects"
+    className="px-8 py-3 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 text-black font-semibold hover:scale-105 transition-transform"
+  >
+    View Work
+  </a>
 
-        <a
-          href="mailto:2310080060aids@gmail.com"
-          className="px-8 py-3 rounded-lg border border-purple-400 text-purple-400 hover:bg-purple-500 hover:text-black transition-all"
-        >
-          Contact Me
-        </a>
-      </motion.div>
+  <a
+    href="/sri sai arun.pdf"
+    target="_blank"
+    className="px-8 py-3 rounded-lg border border-purple-400 text-purple-400 hover:bg-purple-500 hover:text-black transition-all"
+  >
+    Download Resume
+  </a>
+
+  <a
+    href="mailto:2310080060aids@gmail.com"
+    className="px-8 py-3 rounded-lg border border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-black transition-all"
+  >
+    Contact Me
+  </a>
+</motion.div>
+
 
     </section>
   );
